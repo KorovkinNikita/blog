@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainApp',
     'news',
-    'homeTasks'
+    'homeTasks',
+    'ckeditor',
+    'ckeditor_uploader'
 ]
 
 MIDDLEWARE = [
@@ -120,4 +122,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+
 STATIC_URL = '/static/'
+STATIC_ROOT = 'static/'
+MEDIA_ROOT = 'media/'
+MEDIA_URL = 'media/'
+CKEDITOR_UPLOAD_PATH = 'uploads/'
